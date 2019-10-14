@@ -69,7 +69,7 @@ instructions
 instructions
 ------------
 
-# clone git (if not already done for first &/ second part)
+* clone git (if not already done for first &/ second part)
 > git clone https://github.com/desertsystems/oracle.git
 > cd oracle
 > python3 buzzfizz.py
