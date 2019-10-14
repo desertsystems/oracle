@@ -2,13 +2,13 @@
 # 14/10/2019
 # Tanwir Ali [ali.tanwir@yahoo.co.uk]
 
-1. Python script that converts a non-negative integer to it's English words equivalent
-======================================================================================
+
+# 1. Python script that converts a non-negative integer to it's English words equivalent
 
 instructions
 ------------
 
-# clone git
+* clone git
 > git clone https://github.com/desertsystems/oracle.git
 > cd oracle
 > python3 number.py
@@ -18,36 +18,41 @@ instructions
 
 
 
-2. A service using Docker for Python web service
-================================================
+# 2. A service using Docker for Python web servic
 
 instructions
 ------------
 
-# clone git (if not already done for first part)
+* clone git (if not already done for first part)
 > git clone https://github.com/desertsystems/oracle.git
 
-# build
+
+* build
 > cd oracle
 > docker build -t oracle .
 
-# check local image
+
+* check local image
 > docker images
 
-# run
+
+* run
 > docker run -d -p 5000:5000 oracle:latest
 
-# test
+
+* test
 > curl http://127.0.0.1:5000/
 *response: {'oracle': 'python'}*
 
-# kill
+
+* kill
 *get container_id from*
 > docker ps
 *then execute*
 > docker kill [container_id]
 
-# delete local images
+
+* delete local images
 > docker system prune -a
 
 **relevant file**
@@ -57,8 +62,8 @@ instructions
 
 
 
-0. Buzzfizz
-===========
+# 0. Buzzfizz
+
 `for a range of numbers 1 to 100, output all but subtitute all divisible by 3 with 'fizz' and substitute all divisible by 5 with 'buzz'. Substitube those number that are both divisabe by 3 and 5 with 'fizzbuzz'.`
 
 instructions
