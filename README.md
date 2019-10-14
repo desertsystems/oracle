@@ -1,6 +1,6 @@
 # oracle
+# Tanwir
 # 14/10/2019
-# Tanwir Ali [ali.tanwir@yahoo.co.uk]
 
 
 # 1. Python script that converts a non-negative integer to it's English words equivalent
@@ -9,10 +9,11 @@ instructions
 ------------
 
 * clone git
+```console
 > git clone https://github.com/desertsystems/oracle.git
 > cd oracle
 > python3 number.py
-
+```
 **relevant files**
 **number.py**
 
@@ -24,37 +25,47 @@ instructions
 ------------
 
 * clone git (if not already done for first part)
+```console
 > git clone https://github.com/desertsystems/oracle.git
-
+```
 
 * build
+```console
 > cd oracle
 > docker build -t oracle .
-
+```
 
 * check local image
+```console
 > docker images
-
+```
 
 * run
+```console
 > docker run -d -p 5000:5000 oracle:latest
-
+```
 
 * test
+```console
 > curl http://127.0.0.1:5000/
+```
 *response: {'oracle': 'python'}*
 
 
 * kill
 *get container_id from*
+```console
 > docker ps
+```
 *then execute*
+```console
 > docker kill [container_id]
-
+```
 
 * delete local images
+```console
 > docker system prune -a
-
+```
 **relevant file**
 **app.py**
 **Dockerfile**
@@ -70,9 +81,10 @@ instructions
 ------------
 
 * clone git (if not already done for first &/ second part)
+```console
 > git clone https://github.com/desertsystems/oracle.git
 > cd oracle
 > python3 buzzfizz.py
-
+```
 **relevant files**
 **buzzfizz.py**
